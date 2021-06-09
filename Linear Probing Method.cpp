@@ -4,6 +4,7 @@
 #include<iomanip>
 using namespace std;
 
+// Bài toán: Xây dựng chương trình bảng băm(hashtable) với phương pháp xử lý đụng độ: Linear Probing Method(Dò tuyến tính)
 // Mặc định số ngăn của bảng băm là 100
 #define M 100
 #define NULLKEY false // Mặc định logic các khóa chưa có data là false
@@ -119,10 +120,11 @@ public:
 	{
 		if (this->isEmpty() == true)
 			cout << "\n\tHashTable is Empty!";
-		else if (k >= 0)
+		else if (k >= 0) // Điều kiện xử lý lệnh xóa ngăn: đầu vào phải là số tự nhiên
 		{
 			this->arr[k].flag = false;
 			this->arr[k].key = -1;
+			this->n--;
 			return;
 		}
 		else if (k < 0)

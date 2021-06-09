@@ -1,6 +1,8 @@
 ﻿#include<iostream>
 using namespace std;
 
+// Bài toán: Xây dựng chương trình bảng băm(hashtable) với phương pháp xử lý đụng độ: Direct Chaining Method (Nối kết trực tiếp)
+
 // Cấu trúc bảng băm và hàm khởi tạo 
 // Định nghĩa hàm băm với giả định 10 phần tử 
 #define M 10
@@ -11,7 +13,7 @@ struct Node
 };
 typedef Node* HashTable[M];
 
-void InitHashTable(HashTable &HT) // Khởi tạo mảng: cấp phát bộ nhớ cho từng Node
+void InitHashTable(HashTable& HT) // Khởi tạo mảng: cấp phát bộ nhớ cho từng Node
 {
 	for (int i = 0; i < M; i++)
 	{
