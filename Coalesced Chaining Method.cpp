@@ -65,7 +65,7 @@ void InsertNode(HashTable& HT, int k) // Thêm nút vào bảng băm
 
 }
 
-void TraverseHashTable(HashTable HT)
+void TraverseHashTable(HashTable HT) //Xuất tuần tự
 {
 	for (int i = 0; i < M; i++)
 	{
